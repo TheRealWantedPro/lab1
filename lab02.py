@@ -3,6 +3,9 @@ import pandas as pd
 
 username = input("Enter your Username: ")
 password = input("Enter your StudentNumber: ")
+with open('user_data.csv', 'w') as file:
+        file.write(username)
+        file.write(password)
 
 print("Choose an option:")
 print("1. Display Product Inventory")
