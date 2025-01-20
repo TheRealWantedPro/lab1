@@ -11,11 +11,11 @@ def readfile():
 
 
 def writefile():
-    with open('inventory_data', mode='w', newline='') as file:
+    with open('inventory_data.csv', mode='w', newline='') as file:
         input = csv.writer(file)
     input.writerows(data)
 
 
-data = pd.read_csv('inventory_data')
+data = pd.read_csv('inventory_data.csv')
 data_dict = data.to_dict(orient='records')
 print(data_dict)
