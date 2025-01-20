@@ -1,7 +1,7 @@
 import csv 
 import pandas as pd
 
-username = input("Enter your username: ")
+username = input("Enter your Username: ")
 password = input("Enter your StudentNumber: ")
 
 print("Choose an option:")
